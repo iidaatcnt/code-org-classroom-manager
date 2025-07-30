@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Code.org Classroom Manager
+
+This is a classroom management system for Code.org, built with Next.js and Tailwind CSS. It allows instructors to manage students and track their learning progress without needing a database.
+
+## Features
+
+- **Student Management:** Add, edit, and delete student information.
+- **Learning Records:** Keep track of each student's learning history, including course, lesson date, duration, progress, and understanding level.
+- **Data Portability:** Export all data to CSV or JSON format for backup or use in other applications.
+- **Data Recovery:** Restore data from a JSON backup file.
+- **Local Storage:** All data is saved in the browser's local storage, so no database is required.
+- **Dashboard:** Provides an overview of student progress and learning trends.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/) - A React framework for building server-side rendered and static web applications.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for creating custom designs.
+- [React Hook Form](https://react-hook-form.com/) - A library for managing forms in React.
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react) - A library of simply designed icons.
+- [date-fns](https://date-fns.org/) - A modern JavaScript date utility library.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
+### Prerequisites
+
+- Node.js (v16.x or later)
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/iidaatcnt/code-org-classroom-manager.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+### Usage
+
+To start the development server, run the following command:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To build the application for production, use:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```sh
+npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Distributed under the MIT License. See `LICENSE` for more information.
